@@ -11,6 +11,7 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   typescript: {
+    // FIXME: remove ignoreBuildErrors once the ~25 type errors are fixed
     ignoreBuildErrors: true,
   },
   images: {

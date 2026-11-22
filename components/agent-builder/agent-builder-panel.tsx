@@ -6,21 +6,19 @@ import { DndProvider } from "react-dnd"
 import { HTML5Backend } from "react-dnd-html5-backend"
 import { AgentCanvas } from "@/components/agent-builder/agent-canvas"
 import { ComponentsPalette } from "@/components/agent-builder/components-palette"
+import { AgentTestChat } from "@/components/agent-builder/agent-test-chat"
 import { AgentPropertiesPanel } from "@/components/agent-builder/agent-properties-panel"
 
 export function AgentBuilderPanel() {
   const [selectedNode, setSelectedNode] = useState(null)
-  
-  return (
-    <DndProvider backend={HTML5Backend}>
-        setSelectedNode] = useState(null)
-  
+
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="flex flex-col h-[600px] gap-4">
         <Tabs defaultValue="canvas" className="w-full">
           <TabsList>
             <TabsTrigger value="canvas">Canvas</TabsTrigger>
+            <TabsTrigger value="test">Test (Ollama)</TabsTrigger>
             <TabsTrigger value="code">Generated Code</TabsTrigger>
             <TabsTrigger value="config">Configuration</TabsTrigger>
           </TabsList>
@@ -36,6 +34,10 @@ export function AgentBuilderPanel() {
               <AgentPropertiesPanel selectedNode={selectedNode} />
             </div>
           </TabsContent>
+          <TabsContent value="test" className="h-[500px]">
+            <AgentTestChat />
+          </TabsContent>
+          {/* MOCK: Generated Code + Config tabs are static text; generate from canvas nodes */}
           <TabsContent value="code" className="h-[500px]">
             <div className="border rounded-md p-4 h-full overflow-auto">
               <pre className="text-sm">
@@ -101,7 +103,7 @@ class CustomAgent extends AgentFramework {
       }
     ]
   }
-}</code>
+}`}</code>
               </pre>
             </div>
           </TabsContent>

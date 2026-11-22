@@ -7,9 +7,11 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Checkbox } from "@/components/ui/checkbox"
+import { OllamaModelSelect } from "@/components/ollama/model-select"
 import { Slider } from "@/components/ui/slider"
 
 export function TrainingForm() {
+  const [baseModel, setBaseModel] = useState("")
   const [batchSize, setBatchSize] = useState([64])
   const [learningRate, setLearningRate] = useState([0.001])
   const [epochs, setEpochs] = useState([10])
@@ -24,18 +26,7 @@ export function TrainingForm() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="model-base">Base Model</Label>
-            <Select defaultValue="gpt-4">
-              <SelectTrigger id="model-base">
-                <SelectValue placeholder="Select a model" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="gpt-4">GPT-4</SelectItem>
-                <SelectItem value="gpt-3.5">GPT-3.5</SelectItem>
-                <SelectItem value="llama-7b">Llama 7B</SelectItem>
-                <SelectItem value="mistral">Mistral</SelectItem>
-                <SelectItem value="custom">Custom</SelectItem>
-              </SelectContent>
-            </Select>
+            <OllamaModelSelect id="model-base" value={baseModel} onValueChange={setBaseModel} />
           </div>
         </div>
 
@@ -114,6 +105,7 @@ export function TrainingForm() {
       </div>
 
       <div className="flex gap-2">
+        {/* OLLAMA: wire to POST /api/ollama/create (Modelfile: base model + system prompt + params). Real fine-tuning needs e.g. Unsloth. */}
         <Button className="flex-1">Start Training</Button>
         <Button variant="outline" className="flex-1">
           Save Configuration

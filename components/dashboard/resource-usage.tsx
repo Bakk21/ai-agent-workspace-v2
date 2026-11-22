@@ -2,6 +2,7 @@
 
 import { Legend, Pie, PieChart, ResponsiveContainer, Cell, Tooltip } from "recharts"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const data = [
   { name: "Compute", value: 45 },
   { name: "Memory", value: 30 },

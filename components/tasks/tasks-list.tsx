@@ -23,6 +23,7 @@ import {
   XCircle,
 } from "lucide-react"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const activeTasks = [
   {
     id: "TASK-1234",

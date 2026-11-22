@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { AlertCircle, XCircle, AlertTriangle, RefreshCcw } from "lucide-react"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample error logs
 const errorLogs = [
   {

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { PlusCircle, Save } from "lucide-react"
 import { ComponentNode } from "@/components/agent-builder/component-node"
 
+// OLLAMA: derive system prompt/tools from these nodes and feed them to AgentTestChat; add save/load agent JSON
 const initialNodes = [
   {
     id: "1",

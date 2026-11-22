@@ -3,6 +3,7 @@
 import { Line, LineChart, ResponsiveContainer, XAxis, YAxis } from "recharts"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const data = [
   {
     date: "Jan 1",

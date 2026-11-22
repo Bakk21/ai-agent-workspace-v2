@@ -5,6 +5,7 @@ import { Area, AreaChart, ResponsiveContainer, XAxis, YAxis, CartesianGrid, Lege
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample resource data
 const resourceData = [
   { time: "00:00", CPU: 45, Memory: 60, Storage: 22, Network: 15 },

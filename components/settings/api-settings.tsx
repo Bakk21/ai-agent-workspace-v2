@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
 import { Eye, EyeOff, Plus, Trash } from "lucide-react"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample API keys
 const apiKeys = [
   {

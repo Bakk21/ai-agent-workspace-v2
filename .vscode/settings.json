@@ -1,0 +1,13 @@
+{
+  "todo-tree.general.tags": ["TODO", "FIXME", "BUG", "MOCK", "OLLAMA"],
+  "todo-tree.highlights.customHighlight": {
+    "TODO":   { "icon": "check",    "foreground": "white", "background": "#0080FF" },
+    "FIXME":  { "icon": "alert",    "foreground": "white", "background": "#FF0000" },
+    "BUG":    { "icon": "bug",      "foreground": "white", "background": "#FF6600" },
+    "MOCK":   { "icon": "beaker",   "foreground": "black", "background": "#FFC800" },
+    "OLLAMA": { "icon": "rocket",   "foreground": "white", "background": "#7A3FF2" }
+  },
+  "todo-tree.general.statusBar": "tags",
+  "todo-tree.tree.showCountsInTree": true,
+  "todo-tree.filtering.excludeGlobs": ["**/node_modules/**", "**/.next/**", "**/components/ui/**"]
+}

@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge"
 import { Progress } from "@/components/ui/progress"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const agents = [
   {
     name: "Research Assistant",

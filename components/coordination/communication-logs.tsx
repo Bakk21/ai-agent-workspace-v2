@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { ArrowRightLeft, Clock, Filter, Search } from "lucide-react"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample communication logs
 const communicationLogs = [
   {

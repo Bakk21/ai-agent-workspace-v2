@@ -5,6 +5,7 @@ import { Progress } from "@/components/ui/progress"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Play, Pause, StopCircle, Info, BarChart } from "lucide-react"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const trainingJobs = [
   {
     id: "TRN-001",

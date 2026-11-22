@@ -2,6 +2,7 @@ import { Check, Clock, XCircle, AlertCircle } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const tasks = [
   {
     id: "TASK-8782",

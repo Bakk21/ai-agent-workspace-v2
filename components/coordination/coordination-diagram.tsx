@@ -101,6 +101,7 @@ const AgentNode = ({ data }: { data: any }) => {
   )
 }
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const nodeTypes = {
   agentNode: AgentNode,
 }

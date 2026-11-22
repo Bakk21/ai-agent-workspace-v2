@@ -6,6 +6,7 @@ import { Card } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample training metrics data
 const accuracyData = [
   { epoch: 1, train: 0.45, validation: 0.42 },

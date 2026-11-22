@@ -2,6 +2,7 @@
 
 import { Progress } from "@/components/ui/progress"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 const trainingJobs = [
   {
     id: "TRN-001",

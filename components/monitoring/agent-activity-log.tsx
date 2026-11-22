@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge"
 import { Check, AlertCircle, Play, Pause, FileText } from "lucide-react"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample activity logs
 const activityLogs = [
   {

@@ -5,6 +5,7 @@ import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
+// MOCK: hardcoded sample data - replace with real data (Ollama run logs / DB)
 // Sample performance data
 const responseTimeData = [
   { time: "00:00", "Research Assistant": 1.2, "Document Analyzer": 0.8, "Data Processor": 1.5 },
